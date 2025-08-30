@@ -1,42 +1,53 @@
 ﻿# Elementos comunes a tener en cuenta
 
-## Tipo de imagen y estilo  
-Ilustración digital en **estilo histórico detallado y realista**, inspirada en manuscritos antiguos, códices medievales y pinturas renacentistas.
-La imagen debe tener una calidad pictórica con texturas visibles similares a las del óleo o el pergamino, con trazos refinados que evocan la ilustración clásica.
-El diseño de los personajes y el entorno debe respetar la estética de la época representada, evitando modernizaciones o estilizaciones que rompan la coherencia histórica.
+## Tipo de imagen y estilo
 
-## Personajes  
-Figuras representadas como sabios, inventores o cronistas, con vestimentas de la época medieval o renacentista.
-Sus atuendos deben transmitir nobleza y sabiduría: telas ricamente detalladas con bordados, ornamentos dorados, capas solemnes.
-Las expresiones deben ser serenas, inspiradoras y evocadoras, como si se tratara de protagonistas de una crónica antigua sobre conocimiento y descubrimientos.
-La postura debe sugerir importancia y solemnidad, al estilo de una pintura clásica.
+Ilustración digital en **estilo realista y tecnológico**, con inspiración en el arte conceptual de la era moderna y contemporánea.
+La imagen debe transmitir innovación, visión de futuro y trascendencia, con texturas limpias, detalles visuales precisos y un acabado de alta calidad.
 
-## Lugares  
-Ambientes que evoquen el conocimiento y la investigación: bibliotecas monásticas, salas de estudio renacentistas, escritorios de sabios iluminados por velas, o salones decorados con tapices y murales.
-La arquitectura debe incluir arcos, columnas o vitrales que refuercen la atmósfera histórica.
-El entorno debe ser rico en detalles, con objetos como libros, pergaminos, astrolabios o instrumentos de estudio, siempre dentro de la estética clásica.
+## Personajes
 
-## Iluminación y atmósfera  
-Iluminación cálida y tenue, imitando la luz de velas, lámparas de aceite o rayos de sol filtrándose por vitrales.
-Las sombras deben ser suaves y naturales, resaltando la profundidad y los detalles sin crear contrastes duros.
-La atmósfera debe transmitir solemnidad, historia y un aire de trascendencia.
+Representar a **figuras históricas de la informática y el desarrollo de software** como pioneros, visionarios y creadores de conocimiento.
+Vestimenta y apariencia adaptadas a cada época (desde los primeros programadores hasta referentes actuales), reflejando su contexto histórico pero con un aire solemne y trascendente.
+Expresiones inspiradoras y narrativas: deben transmitir sabiduría, genialidad y legado.
 
-## Paleta de colores  
-Tonos cálidos y envejecidos: ocres, dorados, marrones y rojos profundos.
-Detalles destacados en azul ultramar y verde esmeralda para resaltar elementos clave.
-La saturación debe ser equilibrada, evocando el desgaste natural de pigmentos en manuscritos y frescos antiguos.
+## Lugares
 
-## Nivel de detalle y calidad  
-Alto nivel de detalle en texturas y materiales: pliegues de las telas, bordados delicados, vetas en maderas antiguas, grietas en paredes de piedra.
-Los objetos deben estar representados con fidelidad histórica: libros, pergaminos, plumas, sellos de cera, copas, astrolabios u otros símbolos de conocimiento y sabiduría.
+Ambientes que evoquen el avance tecnológico y el pensamiento innovador:
 
-## Composición y ángulo de cámara  
-Composiciones inspiradas en pinturas renacentistas: equilibrio visual y armonía clásica. Uso de perspectiva lineal o ángulos dramáticos que refuercen la narrativa de la escena.
-La profundidad de campo debe dirigir la atención al punto focal sin perder detalle en los elementos secundarios.
+* Primeras salas de computadoras con grandes máquinas.
+* Oficinas de investigación con pizarras llenas de fórmulas y diagramas.
+* Centros de datos futuristas o entornos digitales abstractos que simbolicen el software.
+  El entorno debe estar lleno de símbolos del conocimiento: computadores, tarjetas perforadas, pizarras, servidores, líneas de código, interfaces o elementos abstractos de datos.
 
-## Exclusiones  
-No incluir elementos modernos, iluminación artificial fuerte, fantasía, ciencia ficción ni estilización excesiva.
-No añadir anacronismos ni texto escrito en la imagen. Todo debe ser fiel a la estética histórica y clásica.
+## Iluminación y atmósfera
+
+Iluminación clara y dramática que resalte el conocimiento y el impacto del personaje.
+Efectos de luz sutiles que evoquen pantallas, datos flotantes o conexiones digitales.
+Ambiente solemne y trascendente, transmitiendo la importancia histórica de la informática.
+
+## Paleta de colores
+
+Tonos modernos y tecnológicos: azules eléctricos, cian, blanco, negro profundo y acentos en verde o violeta.
+Detalles metálicos y luminosos que transmitan innovación.
+Saturación equilibrada para resaltar elementos clave.
+
+## Nivel de detalle y calidad
+
+Alto nivel de detalle en los personajes, su entorno y los objetos tecnológicos.
+Mostrar con precisión elementos de cada época: desde viejas computadoras y cables hasta circuitos, servidores y símbolos digitales.
+
+## Composición y ángulo de cámara
+
+Inspiración en retratos icónicos y composiciones cinematográficas.
+Uso de ángulos que refuercen la narrativa (contrapicados heroicos, planos amplios con perspectiva de datos en el fondo).
+La profundidad debe guiar la mirada hacia el personaje como centro de la historia.
+
+## Exclusiones
+
+No incluir elementos de fantasía, ciencia ficción futurista extrema ni estilización caricaturesca.
+Evitar anacronismos: cada personaje debe estar rodeado de elementos coherentes con su época tecnológica.
+No añadir texto escrito dentro de la imagen.
 
 ---
 
