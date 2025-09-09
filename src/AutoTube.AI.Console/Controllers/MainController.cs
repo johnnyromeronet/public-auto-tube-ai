@@ -35,8 +35,14 @@ namespace AutoTube.AI.Console.Controllers
                 mainPrompt = mainPrompt.Replace($"**[{_historicalPrompt}]**", historicalAux);
             }
 
-            // TO-DO: Obtener guión
-            var model = new ContentResponseModel();
+            var model = await CommonService.GetTextContent(new()
+            {
+                ObjName = _objName,
+                Temperature = _temperature,
+                SysPrompt = mainPrompt,
+                UsrPrompt = usrPrompt,
+                Seed = _seed
+            });
 
             if (model != null)
             {
@@ -44,8 +50,7 @@ namespace AutoTube.AI.Console.Controllers
                 var json = JsonConvert.SerializeObject(model, Formatting.Indented);
                 await File.WriteAllTextAsync($"{CommonService.OutputPath}{prefix}\\content.json", json);
 
-                // TO-DO: Obtener audio
-                var audio = new byte[0];
+                var audio = await CommonService.GetAudioContent(model.Content, 1, _objName);
                 if (audio != null)
                 {
                     var audioPath = $"{CommonService.OutputPath}{prefix}\\audio.mp3";
@@ -54,11 +59,10 @@ namespace AutoTube.AI.Console.Controllers
                     List<string> imgList = [];
                     var counter = 1;
 
-                    // TO-DO: Obtener imagenes
                     foreach (var item in model.Timelap)
                     {
                         item.ImagePrompt = imgPrompt.Replace($"**[image_prompt]**", item.ImagePrompt);
-                        var image = new byte[0];
+                        var image = await CommonService.GetImageContent(item.ImagePrompt, _objName);
 
                         if (image == null)
                         {
@@ -72,7 +76,28 @@ namespace AutoTube.AI.Console.Controllers
 
                         if (counter == 1)
                         {
-                            // TO-DO: Generar miniatura
+                            success = await FFmpegService.AddTextToImage(new()
+                            {
+                                Text = $"LA HISTORIA DE {model.Name.ToUpper()}",
+                                InputPath = auxPath,
+                                OutputPath = $"{CommonService.OutputPath}{prefix}\\{baseName}.png",
+                                FontPath = CommonService.FontPath,
+                                FontSize = 220,
+                                SpecFontSize = Tuple.Create(model.Name.ToUpper(), 300F),
+                                FontColor = "#FFFFFF",
+                                SpecFontColor = Tuple.Create(model.Name.ToUpper(), "#000000"),
+                                ShadowColor = "#000000",
+                                SpecShadowColor = Tuple.Create(model.Name.ToUpper(), string.Empty),
+                                BorderColor = "#000000",
+                                SpecBorderColor = Tuple.Create(model.Name.ToUpper(), string.Empty),
+                                BoxColor = "#000000",
+                                SpecBoxColor = Tuple.Create(model.Name.ToUpper(), "#FAA700")
+                            }, _objName);
+
+                            if (!success)
+                            {
+                                break;
+                            }
                         }
 
                         success = true;

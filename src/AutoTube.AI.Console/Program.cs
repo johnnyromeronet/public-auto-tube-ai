@@ -26,7 +26,6 @@ namespace AutoTube.AI.Console
             }
 
             Directory.CreateDirectory(CommonService.OutputPath);
-            Directory.CreateDirectory(CommonService.PromptsPath);
             Directory.CreateDirectory(CommonService.TempPath);
         }
 
