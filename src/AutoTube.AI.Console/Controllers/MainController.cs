@@ -1,4 +1,4 @@
-﻿using AutoTube.AI.Console.Models;
+﻿using AutoTube.AI.Console.Enums;
 using AutoTube.AI.Console.Services;
 using Newtonsoft.Json;
 
@@ -106,7 +106,34 @@ namespace AutoTube.AI.Console.Controllers
 
                     if (success)
                     {
-                        // TO-DO: Generar vídeo
+                        var duration = await FFmpegService.GetMediaDuration(audioPath, _objName);
+                        var secondsPerSlide = duration / imgList.Count;
+
+                        success = await FFmpegService.CreateSlideshow(new()
+                        {
+                            Images = imgList,
+                            SecondsPerSlide = secondsPerSlide,
+                            SlideMode = SlideModeEnum.ZoomIn,
+                            OutputPath = $"{CommonService.OutputPath}{prefix}\\{baseName}.mp4",
+                            Audios = [
+                                new()
+                                {
+                                    Path = audioPath,
+                                    Volume = 1.8
+                                },
+                                new()
+                                {
+                                    Path = CommonService.MusicPath,
+                                    Volume = 0.15,
+                                    FadeOutDuration = 1.5
+                                }
+                            ]
+                        }, _objName);
+
+                        if (success)
+                        {
+                            await File.AppendAllTextAsync($"{CommonService.PromptsPath}{_historicalPrompt}", $"{Environment.NewLine}- {model.Title}");
+                        }
                     }
                 }
             }
